@@ -1,4 +1,5 @@
 import React from "react";
+import { Link as ScrollLink } from "react-scroll";
 import content from "../content";
 export default function Navigation() {
   return (
@@ -12,12 +13,14 @@ export default function Navigation() {
           {content.nav.logo}{" "}
           <span className="w-3 h-3 bg-red-500 inline-block rounded-full"></span>
         </h1>
-        <div>
+        <div className="text-white text-xl">
           {content.nav.links.map((link, index) => {
             return (
-              <span className="text-xl mr-4" key={index}>
-                {link.text}
-              </span>
+              <ScrollLink to={link.to} smooth={true}>
+                <span className="mr-4 cursor-pointer" key={index}>
+                  {link.text}
+                </span>
+              </ScrollLink>
             );
           })}
         </div>

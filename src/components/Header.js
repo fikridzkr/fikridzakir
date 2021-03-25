@@ -17,11 +17,12 @@ export default function Header() {
       }}
     >
       <div className="w-10/12 mx-auto flex flex-col md:flex-row-reverse items-center justify-between">
-        <div className="w-full md:w-2/5">
+        <div className="w-full md:w-2/5  sm:w-2">
           <LazyLoadImage
             src={content.header.img}
             effect="blur"
             placeholderSrc={process.env.PUBLIC_URL + "/logo512.png"}
+            className="rounded-full"
           />
         </div>
         <div className="text-white font-dosis text-center md:text-left">
@@ -46,8 +47,8 @@ export default function Header() {
               className="inline-block"
             />
           </h1>
-          <ScrollLink to="stack" smooth={true}>
-            <button className="animate-float bg-indigo-500 rounded-lg px-20 py-3 text-xl uppercase mt-10">
+          <ScrollLink to="myskills" smooth={true}>
+            <button className="animate-float bg-indigo-500 rounded-lg px-20 py-3 text-xl uppercase mt-10  focus:outline-none ">
               {content.header.btnText}
             </button>
           </ScrollLink>

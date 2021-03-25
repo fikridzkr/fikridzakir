@@ -5,7 +5,7 @@ import content from "../content";
 export default function Stack() {
   return (
     <div
-      id="stack"
+      id="myskills"
       className="min-h-screen flex flex-col items-center justify-center font-dosis"
     >
       <h1 className="text-5xl font-bold ">Stack I Use</h1>
