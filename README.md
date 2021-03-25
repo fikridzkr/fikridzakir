@@ -1,11 +1,1 @@
-Run
-
-```
-    yarn install
-```
-
-tailwind
-
-```
-    yarn run build:css
-```
+## fikri dzakir
